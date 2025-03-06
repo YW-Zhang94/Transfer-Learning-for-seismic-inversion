@@ -547,10 +547,8 @@ def generator_val(xxv,yyv1,yyv2,batch_size_val):
 #        yield x, [y1,y2]
 
 
-checkpoint_val=ModelCheckpoint('CNN_best_val.h5', monitor='val_'+model_final.layers[-2].name+'_accuracy', verbose=1, save_best_only=True, mode='max')
-checkpoint_train=ModelCheckpoint('CNN_best_train.h5', monitor=model_final.layers[-2].name+'_accuracy', verbose=1, save_best_only=True, mode='max')
 checkpoint_val_loss=ModelCheckpoint('CNN_best_val_loss.h5', monitor='val_'+model_final.layers[-2].name+'_loss', verbose=1, save_best_only=True, mode='min')
-callbacks_list=[checkpoint_val,checkpoint_train,checkpoint_val_loss]        
+callbacks_list=[checkpoint_val_loss]        
             
 H=model_final.fit(generator(X_filtered,Y_mask,Y_velocity,batch_size), 
                 validation_data=generator_val(X_test_filtered, Y_mask_test, Y_velocity_test,batch_size_val),
