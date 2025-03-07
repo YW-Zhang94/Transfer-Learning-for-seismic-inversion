@@ -75,7 +75,7 @@ nz=301
 dl=0.5
 X=[]
 
-Vz_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v8/bin_A11v8_Nm8192_Nr72_Nt301_Ns3/Vz.bin',dtype=np.float32, count=-1, sep='')
+Vz_bin = np.fromfile('../Data/A11v8/bin_A11v8_Nm8192_Nr72_Nt301_Ns3/Vz.bin',dtype=np.float32, count=-1, sep='')
 Vz = Vz_bin.reshape(8192, nx, nz, 3, order='F').copy()
 X=Vz
 
@@ -125,7 +125,7 @@ nx=241
 nz=81
 dl=0.5
 Y_mask = []
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v8/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v8/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = mask_bin.reshape(8192, nx, nz, 1, order='F').copy()
 print(np.array(Y_mask).shape)
 
@@ -148,7 +148,7 @@ print(Y_mask_transfer_unseen.shape)
 
 ###read Vs model
 Y_velocity=[]
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v8/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v8/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100
 Y_velocity=np.array(Y_velocity[:,49:191,0:41])
 Y_velocity_transfer_train=Y_velocity[:1024]
