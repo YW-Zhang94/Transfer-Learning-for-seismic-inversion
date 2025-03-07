@@ -216,59 +216,59 @@ nz=81
 dl=0.5
 Y, Y_velocity, Y_mask, nev = [], [], [], []
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v1/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v1/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = mask_bin.reshape(8192, nx, nz, 1, order='F').copy()
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v2/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v2/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v3/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v3/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v4/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v4/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v5/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v5/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v6/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v6/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v7/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v7/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v10/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v10/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v11/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v11/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v12/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v12/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v13/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v13/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v14/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v14/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v15/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v15/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v16/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v16/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask = np.concatenate([Y_mask,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask).shape)
 
@@ -286,59 +286,59 @@ print(Y_mask.shape)
 
 
 ###read Vs model of training dataset
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v1/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v1/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v2/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v2/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v3/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v3/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v4/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v4/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v5/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v5/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v6/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v6/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v7/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v7/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v10/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v10/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v11/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v11/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v12/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v12/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v13/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v13/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v14/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v14/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v15/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v15/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v16/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v16/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity = np.concatenate([Y_velocity,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity).shape)
 
@@ -348,11 +348,11 @@ print(np.array(Y_velocity).shape)
 
 ###read mask of testing dataset
 Y_mask_test, Y_velocity_test = [], []
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v8/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v8/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask_test = mask_bin.reshape(8192, nx, nz, 1, order='F').copy()
 print(np.array(Y_mask_test).shape)
 
-mask_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v9/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
+mask_bin = np.fromfile('../Data/A11v9/models_masks/mask_combined_smth.bin',dtype=np.float32, count=-1, sep='')
 Y_mask_test = np.concatenate([Y_mask_test,mask_bin.reshape(8192, nx, nz, 1, order='F').copy()],axis=0)
 print(np.array(Y_mask_test).shape)
 
@@ -370,11 +370,11 @@ print(Y_mask_test.shape)
 
 
 ###read Vs model of testing dataset
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v8/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v8/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity_test = Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100
 print(np.array(Y_velocity_test).shape)
 
-Vs_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v9/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
+Vs_bin = np.fromfile('../Data/A11v9/models_masks/vs_combined.bin',dtype=np.float32, count=-1, sep='')
 Y_velocity_test = np.concatenate([Y_velocity_test,Vs_bin.reshape(8192, nx, nz, 1, order='F').copy()/100],axis=0)
 print(np.array(Y_velocity_test).shape)
 
