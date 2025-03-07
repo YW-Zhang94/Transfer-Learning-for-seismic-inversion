@@ -85,7 +85,7 @@ Vz = Vz_bin.reshape(8192, nx, nz, 3, order='F').copy()
 X=np.concatenate([X,Vz],axis=0)
 print(np.array(X).shape)
 
-Vz_bin = np.fromfile(../Data/A11v3/bin_A11v3_Nm8192_Nr72_Nt301_Ns3/Vz.bin',dtype=np.float32, count=-1, sep='')
+Vz_bin = np.fromfile('../Data/A11v3/bin_A11v3_Nm8192_Nr72_Nt301_Ns3/Vz.bin',dtype=np.float32, count=-1, sep='')
 Vz = Vz_bin.reshape(8192, nx, nz, 3, order='F').copy()
 X=np.concatenate([X,Vz],axis=0)
 print(np.array(X).shape)
@@ -148,12 +148,12 @@ print(np.array(X).shape)
 
 ###read waveforms of validation dataset
 X_test=[]
-Vz_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v8/bin_A11v8_Nm8192_Nr72_Nt301_Ns3/Vz.bin',dtype=np.float32, count=-1, sep='')
+Vz_bin = np.fromfile('../Data/A11v8/bin_A11v8_Nm8192_Nr72_Nt301_Ns3/Vz.bin',dtype=np.float32, count=-1, sep='')
 Vz = Vz_bin.reshape(8192, nx, nz, 3, order='F').copy()
 X_test=Vz
 print(np.array(X_test).shape)
 
-Vz_bin = np.fromfile('D:/Yanwei/Anomaly_detection/Data_v11/A11v9/bin_A11v9_Nm8192_Nr72_Nt301_Ns3/Vz.bin',dtype=np.float32, count=-1, sep='')
+Vz_bin = np.fromfile('../Data/A11v9/bin_A11v9_Nm8192_Nr72_Nt301_Ns3/Vz.bin',dtype=np.float32, count=-1, sep='')
 Vz = Vz_bin.reshape(8192, nx, nz, 3, order='F').copy()
 X_test=np.concatenate([X_test,Vz],axis=0)
 print(np.array(X_test).shape)
