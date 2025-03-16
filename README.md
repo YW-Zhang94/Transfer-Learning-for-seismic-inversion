@@ -18,7 +18,7 @@ The technique is decribed in the paper:
 
 Data structure:
 
-Data, in the paper (), should be download with link, and unzip under ~/Data: 
+Data, in the paper, can be downloaded with link and unzip under ~/Data: 
         
         https://kansas-my.sharepoint.com/:f:/g/personal/y230z012_home_ku_edu/Eo0ARJCvWmNAlsZv3L1ssLoBQwKnyjGcDAKwc-8MuhIcgQ?e=A4gclP
 There are 16 groups dataset in A11:
@@ -51,9 +51,20 @@ There are 2 groups in A12:
         
 ------------------------------------------------------------------------------------------------------        
 
+CNN models:
 
+Models, in the paper, can be downloaded from the link and unzip under ~/models:
 
+        https://kansas-my.sharepoint.com/:f:/g/personal/y230z012_home_ku_edu/Eo0ARJCvWmNAlsZv3L1ssLoBQwKnyjGcDAKwc-8MuhIcgQ?e=A4gclP
+The new trained models are saved under ~/train or ~/transfer
 
+------------------------------------------------------------------------------------------------------  
+
+Training and Testing:
+
+Training and transfer learning program can be executed under ~/train and ~/transfer, respectively. The models are saved under same folder.
+
+Testing programs are under ~/test and ~/transfer_test. The program will automatically generate Figure 5 and 10.
 
 
 
