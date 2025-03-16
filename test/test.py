@@ -192,7 +192,7 @@ model_final.compile(loss=[keras.losses.categorical_crossentropy],
                     optimizer=tf.keras.optimizers.Adam(lr=0.0005),
                     metrics=['accuracy'])
 model_final.summary()
-model_final.load_weights('../models/CNN_paper_before_transfer.h5')
+model_final.load_weights('../models/paper_before_transfer.h5')
 
 
 ###Figure 5 in the paper
