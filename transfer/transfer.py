@@ -283,7 +283,7 @@ model_final.summary()
 
 
 ###transfer learning
-model_final.load_weights('../models/Train_filter_latent/CNN_best_val_loss.h5')
+model_final.load_weights('../models/paper_before_transfer.h5')
 batch_size=64
 batch_size_val=64
 def generator(xx,yy1,batch_size):
