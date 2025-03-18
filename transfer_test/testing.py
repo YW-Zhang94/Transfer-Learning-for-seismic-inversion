@@ -338,7 +338,7 @@ ax_m_4.text(1,3.5,"(d)",size=15,bbox=dict(facecolor='white', edgecolor='none', p
 ax_m_4.set_xticklabels([])
 ax_m_4.set_yticklabels([])
 
-n=42
+n=2042
 model_final.load_weights('../models/paper_before_transfer.h5')
 result_orignal=model_final.predict(X_transfer_unseen[n:n+1])
 X_tran_syn_test_filtered_noise_1=X_tran_syn_test_filtered[n:n+1]+ran[0]
