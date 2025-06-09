@@ -11,8 +11,8 @@ Versions:
 
 **Please report confusions/erros to y230z012@ku.edu
 
-The technique is decribed in the paper: 
-
+The technique is decribed in the paper: Zhang, Y., Borisov, D., Abbasi, S., Miller, R. D., & Sloan, S. D. (2025). Using transfer learning to enhance void detection and shear wave velocity model inversion from near-surface seismic shot gathers. Journal of Applied Geophysics, 105780.
+This code includes only the synthetic data component of the study, covering training, testing, and transfer learning procedures. The real dataset used in the research is confidential and therefore not included
 
 ------------------------------------------------------------------------------------------------------
 
